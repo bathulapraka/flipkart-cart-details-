@@ -1,0 +1,25 @@
+
+<!DOCTYPE html>
+<html>
+
+<body>
+    <form id="flikartdetails">
+        <label for="price">product price :-</label>
+        <input type="number" id="price" required>
+        <label for="name">product name :-</label>
+        <input type="text" id="name" required>
+        <label for="category" id="categoryLabel">choose a category :-</label>
+        <select id="category" required>
+            <option value="food">food</option>
+            <option value="medical">medical</option>
+            <option value="insurance">Insurance</option>
+            <option value="electronics">Electronics</option>
+        </select>
+        <input type="submit" value="Add Product">
+    </form>
+    <div id="display-container"></div>
+    <script src="https://cdn.jsdelivr.net/npm/axios@1.1.2/dist/axios.min.js"></script>
+    <script src="main.js"></script>
+</body>
+
+</html>
