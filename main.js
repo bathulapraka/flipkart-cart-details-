@@ -18,9 +18,9 @@ document.addEventListener('DOMContentLoaded', function () {
 
         axios.post("https://crudcrud.com/api/e2254751b952404d8a9b2d098e80c3d6/flipkart", newobj)
             .then((response) => {
-                var key = response.data._id; // Use the correct property name (e.g., _id)
+                var key = response.data._id; 
                 
-                // Store the key in localStorage
+                
                 allkeys.push(key);
                 localStorage.setItem('allkeys', JSON.stringify(allkeys));
 
